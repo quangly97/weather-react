@@ -23,7 +23,8 @@ class App extends React.Component{
             const result = await axios.get(`${url}/weather?q=${city},${country}&appid=${API_KEY}`)
             console.log(result.data)
             this.setState({
-                data: result.data
+                data: result.data,
+                error: false
             })
         }else{
             this.setState({

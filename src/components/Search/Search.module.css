@@ -5,4 +5,25 @@
 form{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+form div{
+    margin: 3px;
+}
+
+.alert{
+    width: 100%;
+}
+
+button{
+    width: 5em;
+    position: absolute;
+    display: block;
+}
+
+button:hover{
+    color: #255784;
+    background: #00FF10;
+    box-shadow: 0 0 10px #00FF10, 0 0 40px #00FF10, 0 0 80px #00FF10;
 }

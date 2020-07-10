@@ -17,18 +17,18 @@ const WeatherCard = ({data: {name, sys, main, weather, dt}}) =>{
         return `${new Date(time * 1000)}`
     }
 
-    const getWeatherIcon = rangeId => {
-        if (rangeId >= 200 && rangeId < 232){
+    const getWeatherIcon = id => {
+        if (id >= 200 && id < 232){
             return 'w-thunderstorm'
-        } else if (rangeId >= 300 && rangeId <= 321){
+        } else if (id >= 300 && id <= 321){
             return 'wi-sleet'
-        } else if (rangeId >= 500 && rangeId <= 521){
+        } else if (id >= 500 && id <= 521){
             return 'wi-storm-showers'
-        } else if (rangeId >= 600 && rangeId <= 622){
+        } else if (id >= 600 && id <= 622){
             return 'wi-snow'
-        } else if (rangeId >= 701 && rangeId <= 781){
+        } else if (id >= 701 && id <= 781){
             return 'wi-fog'
-        } else if (rangeId === 800){
+        } else if (id === 800){
             return 'wi-day-sunny'
         } else{
             return 'wi-day-fog'

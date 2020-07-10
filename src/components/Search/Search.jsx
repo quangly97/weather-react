@@ -1,22 +1,17 @@
 import React from 'react'
 import styles from './Search.module.css'
 
-const error = () => {
-    return (
-        <div className="styles.alert" role='alert'>
-            Please Enter City and Country..!
-        </div>
-    )
-}
-
 const Search = ({loadWeather, error}) => {
     return(
         <div className={styles.Search}>
+            <div>
+                {error ?
+                    <div className={styles.alert} role='alert'>
+                        Please Enter City and Country!
+                        </div> :
+                    ""}
+            </div>
             <form onSubmit={loadWeather}>
-                <div>
-                    {error ?
-                        error() : ""}
-                </div>
                 <div>
                     <input 
                         type='text'
