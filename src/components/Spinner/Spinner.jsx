@@ -1,17 +1,12 @@
 import React from 'react'
 import spinner from './spinner.gif'
+import styles from './Spinner.module.css'
 
 const Spinner = () => {
     return(
-        <img
-            src={spinner}
-            style={{
-                width: '200px',
-                margin: 'auto',
-                display: 'block'
-            }}
-            alt='Loading'
-        />
+        <div className={styles.Spinner}>
+            <img src={spinner} alt='loading' />
+        </div>
     )
 }
 

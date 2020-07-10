@@ -1,37 +1,39 @@
 import React from 'react'
 import styles from './Search.module.css'
 
-const Search = ({loadWeather, error}) => {
+const Search = ({fetchWeather, error}) => {
     return(
         <div className={styles.Search}>
             <div>
-                {error ?
-                    <div className={styles.alert} role='alert'>
-                        Please Enter City and Country!
-                        </div> :
-                    ""}
+                {
+                    error ?
+                        <div classname={styles.alert} role='alert'>
+                            Please enter a City and Country!
+                    </div> :
+                        ""
+                }
             </div>
-            <form onSubmit={loadWeather}>
+            <form onSubmit={fetchWeather}>
                 <div>
-                    <input 
+                    <input
                         type='text'
-                        name='city'
                         placeholder='City ex.Toronto'
+                        name='city'
                         autoComplete='off'
-                    >
-                    </input>
+                    />
                 </div>
                 <div>
                     <input
                         type='text'
-                        name='country'
                         placeholder='Country ex.CA'
+                        name='country'
                         autoComplete='off'
-                    >
-                    </input>
+                    />
                 </div>
                 <div>
-                    <button>Search</button>
+                    <button>
+                        Search
+                    </button>
                 </div>
             </form>
         </div>

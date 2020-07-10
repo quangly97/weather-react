@@ -7,12 +7,14 @@ const Header = () => {
     return(
         <div className={styles.Header}>
             <div className={styles.logo}>
-                <a href='#'>
-                    <img className={styles.logoImage} src={logo} alt='' />
-                    <div className={styles.logoText}>Quang's Weather Network</div>
+                <a href='index.html'>
+                    <img className={styles.logoImage} src={logo} alt='logo'/>
+                    <div className={styles.logoText}>
+                        Quang's Weather Network
+                    </div>
                 </a>
             </div>
-            <NavBar/>
+            <NavBar />
         </div>
     )
 }

@@ -4,7 +4,7 @@ import {Spinner} from '../'
 import 'weather-icons/css/weather-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const WeatherCard = ({data: {name, sys, main, weather, dt}}) =>{
+const WeatherCard = ({data : {name, sys, main, weather, dt}}) => {
     if(!main){
         return <Spinner/>
     }
@@ -14,43 +14,62 @@ const WeatherCard = ({data: {name, sys, main, weather, dt}}) =>{
     }
 
     const toRegularTime = time => {
-        return `${new Date(time * 1000)}`
+        return `${new Date(time*1000)}`
     }
 
-    const getWeatherIcon = id => {
-        if (id >= 200 && id < 232){
-            return 'w-thunderstorm'
-        } else if (id >= 300 && id <= 321){
-            return 'wi-sleet'
-        } else if (id >= 500 && id <= 521){
-            return 'wi-storm-showers'
-        } else if (id >= 600 && id <= 622){
-            return 'wi-snow'
-        } else if (id >= 701 && id <= 781){
-            return 'wi-fog'
-        } else if (id === 800){
-            return 'wi-day-sunny'
-        } else{
-            return 'wi-day-fog'
+    const getIcon = icon => {
+        if(icon === '01d'){
+            return 'day-sunny'
+        } else if (icon === '01n'){
+            return 'night-clear'
+        } else if (icon === '02d') {
+            return 'day-cloudy'
+        } else if (icon === '02n') {
+            return 'night-partly-cloudy'
+        } else if (icon === '03d') {
+            return 'day-cloudy'
+        } else if (icon === '03n') {
+            return 'night-cloudy'
+        } else if (icon === '04d') {
+            return 'day-cloudy-high'
+        } else if (icon === '04n') {
+            return 'night-cloudy-high'
+        } else if (icon === '09d') {
+            return 'day-showers'
+        } else if (icon === '09n') {
+            return 'night-showers'
+        } else if (icon === '10d') {
+            return 'day-rain'
+        } else if (icon === '10n') {
+            return 'night-rain'
+        } else if (icon === '11d') {
+            return 'day-thunderstorm'
+        } else if (icon === '11n') {
+            return 'night-thunderstorm'
+        } else if (icon === '13d') {
+            return 'day-snow'
+        } else if (icon === '13n') {
+            return  'night-snow'
+        } else if (icon === '50d') {
+            return 'day-fog'
+        } else {
+            return 'night-fog'
         }
     }
 
     return(
         <div className={styles.weatherCard}>
-            <h1 className={styles.location}>{name}, {sys.country} Weather</h1>
-            <h6 className={styles.time}>Updated on {toRegularTime(dt)}</h6>
-            <i className={`wi ${getWeatherIcon(weather[0].id)} display-1`}></i>
+            <h1 className={styles.Location}>{name}, {sys.country}</h1>
+            <h6 className={styles.time}>Retrieved on {toRegularTime(dt)}</h6>
+            <i className={`wi wi-${getIcon(weather[0].icon)} display-1`}></i>
             <div className={styles.temp}>
                 <div className={styles.currTemp}>
                     <h1>{kelvinToCelcius(main.temp)}</h1>
                 </div>
                 <div>
-                    <p className={styles.celcius}>
-                        &deg;C
-                    </p>
-                    <p className={styles.tempText}>
-                        feels<br/>like
-                    </p>
+                    <p className={styles.celcius}>&deg;C</p>
+                    <p className={styles.tempText}>Feels</p>
+                    <p className={styles.tempText}>Like</p>
                 </div>
                 <div className={styles.feelsLikeTemp}>
                     <h3>{kelvinToCelcius(main.feels_like)}</h3>
