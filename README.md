@@ -17,7 +17,7 @@ The user enters the city and country of their choosing. The current temperature 
 * CSS3
 * JavaScript
 * Reactjs
-* BootStrap
+* Bootstrap
 * Axios
 * Git
 * GitHub
