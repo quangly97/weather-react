@@ -22,6 +22,9 @@ The user enters the city and country of their choosing. The current temperature 
 * Git
 * GitHub
 
+![weather-react](https://user-images.githubusercontent.com/62526327/87111921-91e6ca80-c238-11ea-9cb9-a74b91d8f49f.PNG)
+![weather-react2](https://user-images.githubusercontent.com/62526327/87111930-97dcab80-c238-11ea-91e7-f175351769c4.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
