@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container{
+    width: 100%;
+    height: calc(100vh - 30px);
+    font-family: Catamaran;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-image: url('./image/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    color: whitesmoke;
+}
