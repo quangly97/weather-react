@@ -1,4 +1,4 @@
-## Weather Webpage
+# Weather Webpage
 A weather webpage that retrieves information from a weather api using axios: https://openweathermap.org/api.
 
 ## Brief
