@@ -1,6 +1,9 @@
 # Weather Webpage
 A weather webpage that retrieves information from a weather api using axios: https://openweathermap.org/api.
 
+![weather-react](https://user-images.githubusercontent.com/62526327/87111921-91e6ca80-c238-11ea-9cb9-a74b91d8f49f.PNG)
+![weather-react2](https://user-images.githubusercontent.com/62526327/87111930-97dcab80-c238-11ea-91e7-f175351769c4.PNG)
+
 ## Brief
 The user enters the city and country of their choosing. The current temperature and the "feels-like" temperature is displayed along with a short description about the weather. An icon will appear in relation to the weather.
 
@@ -21,9 +24,6 @@ The user enters the city and country of their choosing. The current temperature 
 * Axios
 * Git
 * GitHub
-
-![weather-react](https://user-images.githubusercontent.com/62526327/87111921-91e6ca80-c238-11ea-9cb9-a74b91d8f49f.PNG)
-![weather-react2](https://user-images.githubusercontent.com/62526327/87111930-97dcab80-c238-11ea-91e7-f175351769c4.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
