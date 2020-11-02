@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header, NavBar, Search, WeatherCard, Footer} from './components'
+import {Header, Search, WeatherCard, Footer} from './components'
 import axios from 'axios'
 import styles from './App.module.css'
 
@@ -12,7 +12,6 @@ class App extends React.Component{
         error: false
     }
     
-
     fetchWeather = async (e) => {
         e.preventDefault()
 

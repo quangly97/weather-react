@@ -5,12 +5,11 @@ const Search = ({fetchWeather, error}) => {
     return(
         <div className={styles.Search}>
             <div>
-                {
-                    error ?
-                        <div classname={styles.alert} role='alert'>
-                            Please enter a City and Country!
+                { error ? 
+                    <div classname={styles.alert} role='alert'>
+                        Please enter a City and Country!
                     </div> :
-                        ""
+                    ""
                 }
             </div>
             <form onSubmit={fetchWeather}>
@@ -31,9 +30,7 @@ const Search = ({fetchWeather, error}) => {
                     />
                 </div>
                 <div>
-                    <button>
-                        Search
-                    </button>
+                    <button>Search</button>
                 </div>
             </form>
         </div>
