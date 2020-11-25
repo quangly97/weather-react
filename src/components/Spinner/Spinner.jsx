@@ -4,8 +4,8 @@ import styles from './Spinner.module.css'
 
 const Spinner = () => {
     return(
-        <div className={styles.Spinner}>
-            <img src={spinner} alt='loading' />
+        <div className={styles.spinner}>
+            <img src={spinner} alt='spinner-icon' />
         </div>
     )
 }

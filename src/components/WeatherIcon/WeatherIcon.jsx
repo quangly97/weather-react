@@ -2,7 +2,7 @@ import React from 'react'
 import 'weather-icons/css/weather-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Icon = (props) => {
+const WeatherIcon = ({icon}) => {
     const getIcon = icon => {
         if(icon === '01d'){
             return 'day-sunny'
@@ -44,8 +44,8 @@ const Icon = (props) => {
     }
 
     return (
-        <i className={`wi wi-${getIcon(props.weather[0].icon)} display-1`}></i>
+        <i className={`wi wi-${getIcon(icon)} display-1`}></i>
     )
 }
 
-export default Icon;
+export default WeatherIcon;

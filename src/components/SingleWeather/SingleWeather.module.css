@@ -1,0 +1,38 @@
+i {
+  padding: 0.7rem;
+}
+.singleweather-container {
+  display: block;
+  margin: 1.47rem auto;
+  text-align: center;
+}
+.singleweather-container h1,
+.singleweather-container h6 {
+  padding: 0.4rem;
+}
+.singleweather-container h4 {
+  padding-bottom: 1.3rem;
+}
+.temperature-reading {
+  display: flex;
+  justify-content: center;
+}
+.temperature-reading span {
+  height: 5rem;
+  padding: 0 0.2rem;
+}
+.temperature-text {
+  font-weight: 900;
+}
+.temperature-text p {
+  text-transform: uppercase;
+  margin: 0;
+}
+#main-temp {
+  margin-top: -1rem;
+  font-size: 5rem;
+}
+#feels-like {
+  margin-top: -0.5rem;
+  font-size: 2.5rem;
+}
