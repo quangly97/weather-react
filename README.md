@@ -1,27 +1,38 @@
 # Weather Webpage
 A weather webpage that retrieves information from a weather api using axios: https://openweathermap.org/api.
 
-![weather-react](https://user-images.githubusercontent.com/62526327/87111921-91e6ca80-c238-11ea-9cb9-a74b91d8f49f.PNG)
-![weather-react2](https://user-images.githubusercontent.com/62526327/87111930-97dcab80-c238-11ea-91e7-f175351769c4.PNG)
+![Opening Page](https://user-images.githubusercontent.com/62526327/100182054-b078f580-2ea9-11eb-9d91-99f6f894e532.PNG)
+![Today Weather](https://user-images.githubusercontent.com/62526327/100182052-afe05f00-2ea9-11eb-8b87-04c43765a0c8.PNG)
+![Daily Weather](https://user-images.githubusercontent.com/62526327/100182053-b078f580-2ea9-11eb-8f7e-f1f92bf49353.PNG)
 
 ## Brief
-The user enters the city and country of their choosing. The current temperature and the "feels-like" temperature is displayed along with a short description about the weather. An icon will appear in relation to the weather.
+The user enters the city and country. 
+While the user is on the 'Today' tab (/): the current temperature, weather as well as an icon are displayed on the screen.
+While the user is on the 'Daily' tab (/daily): the current temperature, weather, icon, probability of precipitation (POP) and wind speed are displayed on the screen.
 
 ## Components
-* Header
 * NavBar
 * Search
-* WeatherCard
+* SingleWeather
+* DailyWeather
+* SingleDailyWeather
+* Sidebar
 * Spinner
-* Footer
+* WeatherIcon
+
+## Pages
+* Daily
+* Error
+* Today
 
 ## Technologies Used
 * HTML5
 * CSS3
 * JavaScript
 * Reactjs
-* Bootstrap
+* React Icons
 * Axios
+* React Router
 * Git
 * GitHub
 
