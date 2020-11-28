@@ -21,6 +21,7 @@ While the user is on the 'Daily' tab (/daily): the current temperature, weather,
 * Sidebar
 * Spinner
 * WeatherIcon
+* Error
 
 ## Pages
 * Daily

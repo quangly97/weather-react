@@ -1,7 +1,7 @@
 import React from 'react'
 import { DailyWeather } from '../components'
 
-const Daily = () => {
+const DailyPage = () => {
 
     return (
         <section>
@@ -10,4 +10,4 @@ const Daily = () => {
     )
 }
 
-export default Daily
+export default DailyPage

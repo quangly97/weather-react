@@ -1,7 +1,7 @@
 import React from 'react'
 import { SingleWeather } from '../components'
 
-const Today = () => {
+const TodayPage = () => {
     return (
         <section>
             <SingleWeather/>
@@ -9,4 +9,4 @@ const Today = () => {
     )
 }
 
-export default Today
+export default TodayPage

@@ -1,3 +1,3 @@
-export { default as Today } from './Today'
-export { default as Daily } from './Daily'
-export { default as Error } from './Error'
+export { default as TodayPage } from './TodayPage'
+export { default as DailyPage } from './DailyPage'
+export { default as ErrorPage } from './ErrorPage'

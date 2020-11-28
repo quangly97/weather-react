@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, SearchForm } from './components'
-import { Today, Daily, Error } from './pages'
+import { TodayPage, DailyPage, ErrorPage } from './pages'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styles from './App.module.css'
 
@@ -12,13 +12,13 @@ const App = () => {
                 <SearchForm/>
                 <Switch>
                     <Route exact path='/'>
-                        <Today/>
+                        <TodayPage/>
                     </Route>
                     <Route path='/daily'>
-                        <Daily/>
+                        <DailyPage/>
                     </Route>
                     <Route path='*'>
-                        <Error/>
+                        <ErrorPage/>
                     </Route>
                 </Switch>
             </Router>
